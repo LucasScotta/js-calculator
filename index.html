@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        main {
+            display: flex;
+            place-content: center;
+        }
+
+        #calculator {
+            width: 450px;
+            height: 600px;
+        }
+
+        #keys {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .key,
+        .not-key {
+            width: 100px;
+            height: 100px;
+        }
+
+        .display {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        #display-in,
+        #display-out {
+            border: none;
+            width: 100%;
+            text-align: end;
+        }
+
+        #display-in {
+            font-size: 120%;
+        }
+
+        #display-out {
+            font-size: 200%;
+        }
+    </style>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <main>
+        <div id="calculator">
+            <div class="display">
+                <input id="display-in">
+                <input id="display-out">
+            </div>
+            <div id="keys">
+                <button class="key">←</button>
+                <button class="not-key">(</button>
+                <button class="not-key">)</button>
+                <button class="key">AC</button>
+                <button class="key">7</button>
+                <button class="key">8</button>
+                <button class="key">9</button>
+                <button class="key">-</button>
+                <button class="key">4</button>
+                <button class="key">5</button>
+                <button class="key">6</button>
+                <button class="key">*</button>
+                <button class="key">1</button>
+                <button class="key">2</button>
+                <button class="key">3</button>
+                <button class="key">/</button>
+                <button class="key">0</button>
+                <button class="key">.</button>
+                <button class="key">=</button>
+                <button class="key">+</button>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="./lib/main.js"></script>
+</body>
+
+</html>
